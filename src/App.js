@@ -5,11 +5,11 @@ import AvatarJsx from './Components/AvatarJsx';
 
 function App() {
   return (
-    <div className="App">
+    <div id="1" className="App-header">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <AvatarJsx />
-        <h1> Bienvenidos</h1>
+        <p className="Titulo" style={{backgroundColor: "red"}}onclick={() => console.assert('click')}>Bienvenidos</p>
         <button>BOTON</button>
       </header>
     </div>
