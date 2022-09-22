@@ -1,19 +1,16 @@
 import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-import AvatarJsx from './Components/AvatarJsx';
-
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import Navbar from "./Components/Navbar/Navbar"
 
 function App() {
+
   return (
-    <div id="1" className="App-header">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <AvatarJsx />
-        <p className="Titulo" style={{backgroundColor: "red"}}onclick={() => console.assert('click')}>Bienvenidos</p>
-        <button>BOTON</button>
-      </header>
+    <div className="App">  
+        <Navbar />
+        <ItemListContainer greeting={'Mi ecommerce'}/>
     </div>
   );
 }
-
 export default App;
